@@ -12,14 +12,6 @@ import java.util.Optional;
 
 @Repository
 public interface RideRepository extends JpaRepository<Ride, Long> {
-    List<Ride> findByFromLocationIgnoreCaseAndToLocationIgnoreCaseAndDate(
-            String from, String to, LocalDate date
-    );
-
-    List<Ride> findByFromLocationIgnoreCaseAndToLocationIgnoreCase(
-            String from, String to
-    );
-
     List<Ride> findByDate(LocalDate date);
 
     @Query("""
@@ -32,5 +24,5 @@ public interface RideRepository extends JpaRepository<Ride, Long> {
                            @Param("to") String to,
                            @Param("date") LocalDate date);
 
-    Optional<List<Ride>> findByFromLocationAndToLocationAndDate(String from, String to, LocalDate date);
+    List<Ride> findByFromLocationAndToLocationAndDate(String from, String to, LocalDate date);
 }

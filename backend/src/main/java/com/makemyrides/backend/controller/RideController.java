@@ -59,8 +59,4 @@ public class RideController {
         return ResponseEntity.ok(rideService.removePassengerFromRide(rideId, passengerId));
     }
 
-    @PostMapping("/feedback")
-    public ResponseEntity<FeedbackResponseDTO> addFeedback(@RequestBody FeedbackRequestDTO dto) {
-        return ResponseEntity.ok(rideService.addFeedback(dto));
-    }
 }

@@ -1,5 +1,6 @@
 package com.makemyrides.backend.dto;
 
+import com.makemyrides.backend.entity.Passenger;
 import lombok.*;
 
 import java.time.LocalDate;
@@ -18,7 +19,7 @@ public class RideResponseDTO {
     private String vehicleNumber;
     private String fromLocation;
     private String toLocation;
-    private List<Long> passengerId;
+    private List<PassengerDTO> passengers;
     private LocalTime time;
     private LocalDate date;
 }
