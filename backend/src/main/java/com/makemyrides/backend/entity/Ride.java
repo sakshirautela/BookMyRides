@@ -14,6 +14,8 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 @Entity
+@Getter
+@Setter
 @Table(name = "rides")
 public class Ride {
     @Id
@@ -47,8 +49,6 @@ public class Ride {
     private LocalTime time;
 
     @NotNull
-    private LocalDate date;
-    @OneToMany(mappedBy = "ride", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Feedback> feedbacks;
+    private  LocalDate date;
 
 }
