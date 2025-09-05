@@ -1,6 +1,6 @@
-MakeMyRides
+#MakeMyRides#
 
-MakeMyRides is a ride-sharing API that allows users to create rides, add passengers, and manage vehicle details. The project provides endpoints to manage rides, passengers, and vehicles efficiently.
+MakeMyRides is a ride-sharing API that allows users to create rides, add passengers, and manage vehicle details. It also integrates an MCP (Model Control Protocol) server for backend management and supports LLM (Large Language Model) interaction to enhance ride-sharing functionalities, such as intelligent matching, error handling suggestions, and automated responses.
 
 Features
 
@@ -12,6 +12,9 @@ Add Passengers: Add passengers to rides with seat allocations.
 
 Prevent Duplicate Passengers: Avoid adding the same passenger multiple times to a ride.
 
+MCP Server Integration: Manages backend communication and orchestration between services.
+
+LLM Interaction: Provides smart assistance for users (e.g., suggesting best rides, detecting errors, explaining failures).
 API Endpoints
 1. Vehicle Management
 
