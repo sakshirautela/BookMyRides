@@ -119,7 +119,7 @@ public class RideService {
         }
 
         return rides.stream()
-                .map(this::mapToResponse) // each element is a Ride
+                .map(this::mapToResponse)
                 .collect(Collectors.toList());
     }
 
